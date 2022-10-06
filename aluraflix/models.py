@@ -1,4 +1,3 @@
-from tkinter import CASCADE
 from django.db import models
 
 
@@ -8,7 +7,8 @@ class Categoria(models.Model):
     
     def __str__(self):
          return self.titulo
-    
+
+
 class Video(models.Model):
     titulo = models.CharField(max_length=75)
     descricao = models.TextField()
